@@ -20,6 +20,6 @@ func PrintSlice2d(slice [][]int) {
 			}
 			fmt.Printf("%d\t", val)
 		}
-		fmt.Println()
+		fmt.Println("\n")
 	}
 }
