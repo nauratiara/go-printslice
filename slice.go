@@ -23,3 +23,16 @@ func PrintSlice2d(slice [][]int) {
 		fmt.Println("\n")
 	}
 }
+
+func SliceKosong2d(slice [][]int) {
+	for _, row := range slice {
+		for _, val := range row {
+			if val == 0 {
+				fmt.Print("   ") // Spasi untuk angka kosong
+			} else {
+				fmt.Printf("%2d\t", val)
+			}
+		}
+		fmt.Println("\n")
+	}
+}
