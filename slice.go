@@ -3,15 +3,23 @@ package slice
 import "fmt"
 
 func PrintSlice(slice []int) {
-	for _, val := range slice {
+	for i, val := range slice {
+		if i > 0 {
+			fmt.Print(" ")
+		}
 		fmt.Printf("%d", val)
 	}
+	fmt.Println()
 }
 
 func PrintSlice2d(slice [][]int) {
 	for _, rows := range slice {
-		for _, val := range rows {
-			fmt.Printf("%d,", val)
+		for i, val := range rows {
+			if i > 0 {
+				fmt.Print(" ")
+			}
+			fmt.Printf("%d", val)
 		}
+		fmt.Println()
 	}
 }
